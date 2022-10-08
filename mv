@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc,char* argv[])
+
+{
+        if(argc != 3)
+        {
+                printf("mv: target '%s' is not a directory\n",argv[3]);
+                return 0;
+        }
+
+
+        rename(argv[1],argv[2]);
+        return 0;
+
+}
